@@ -297,6 +297,9 @@
                         <li class="list-group-item">
                             <a href="../controllers/I18nController.html">I18nController</a>
                         </li>
+                        <li class="list-group-item">
+                            <a href="../controllers/SearchController.html">SearchController</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
@@ -341,6 +344,7 @@ import { EjsService } from &#x27;./engines/ejs/ejs.service&#x27;;
 import { VMService } from &#x27;./core/lambda/vm.service&#x27;;
 import { SingletonServiceModule } from &#x27;./singletonService.module&#x27;;
 import { I18nController } from &#x27;./core/i18n/i18n/i18n.controller&#x27;;
+import { SearchController } from &#x27;./core/search/search.controller&#x27;;
 
 @Module({
   imports: [SingletonServiceModule],
@@ -350,6 +354,7 @@ import { I18nController } from &#x27;./core/i18n/i18n/i18n.controller&#x27;;
     TemplateController,
     LambdaService,
     I18nController,
+    SearchController,
   ],
   exports: [VMService],
   providers: [
